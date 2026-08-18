@@ -34,7 +34,26 @@ ng test --ui
 
 ---
 
-# Fichier spac.ts
+# Fichier spec.ts
 
 - Les tests seront implémenter dans les fichiers spec.ts
 
+---
+
+# Contenu du fichier de test
+
+- describe : regroupe les tests d'un même composant ou élément ( guard , service , etc)
+
+- it : contient la logique pour un test unique 
+
+- expect : permet de vérifier le résultat de l'exécution sera utilisé avec des matchers 
+
+    - toBe 
+    - toBeGreater
+    - ToBeTruthy
+    - ToBeSmaller
+    - ToBeEqual
+    - ...
+    - et bien d'autres
+
+- 

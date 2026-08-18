@@ -15,15 +15,21 @@ export class DemoTest {
     return a + b
   }
 
-  soustraction(){
-
+  soustraction(a : number , b : number){
+    
+    return a - b;
   }
 
-  division(){
-
+  
+  multiplication(a : number , b : number){
+    return a * b;
   }
 
-  multiplication(){
+  division( a : number , b : number){
+    if(b == 0){
+      throw new RangeError('Division par zéro impossible')
+    }
 
+    return a / b;
   }
 }
