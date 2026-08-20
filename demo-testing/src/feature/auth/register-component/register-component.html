@@ -1,0 +1,23 @@
+<h1>Register</h1>
+
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label>Email</label>
+        <input type="email" formControlName="email">
+    </div>
+
+        <div>
+        <label>password</label>
+        <input type="password" formControlName="password" >
+        <button (click)="toggleValueShowPassword()">show Password</button>
+    </div>
+
+        <div>
+        <label>Name</label>
+        <input type="email" formControlName="name">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
