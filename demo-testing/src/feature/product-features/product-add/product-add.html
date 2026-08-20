@@ -1,1 +1,39 @@
-<p>product-add works!</p>
+<h1>Add product</h1>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label>Name</label>
+        <input type="text" formControlName="name">
+    </div>
+
+        <div>
+        <label>Description</label>
+        <input type="text" formControlName="description">
+    </div>
+
+        <div>
+        <label>Quantity</label>
+        <input type="number" formControlName="quantity">
+    </div>
+
+        <div>
+        <label>Price</label>
+        <input type="number" formControlName="price">
+    </div>
+
+    <div>
+        <label>Image</label>
+        <input type="text" formControlName="image">
+    </div>
+
+    @if(this.productForm.get('image')?.value){
+        <img [src]="this.productForm.get('image')?.value" width="200">
+    }
+
+    @if(errorMessage()){
+        <p style="color: red;">{{errorMessage()}}</p>
+    }
+
+    <button type="submit">Add</button>
+</form>

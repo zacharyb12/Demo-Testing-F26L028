@@ -1,13 +1,21 @@
 {
-    "users" : [],
-    "product" : [
-        {
+  "users": [],
+  "product": [
+    {
       "name": "aaaaaaa",
       "description": "aaaaaaaaaa",
       "price": 15,
       "quantity": 15,
       "image": "https://cdn.pixabay.com/photo/2026/05/31/13/27/13-27-35-644_1280.jpg",
       "id": 1
+    },
+    {
+      "name": "qsfdfqsdf",
+      "description": "qsddfqsdf",
+      "price": 2,
+      "quantity": 0,
+      "image": "sfdgqfdgsd",
+      "id": 2
     }
-    ]
+  ]
 }

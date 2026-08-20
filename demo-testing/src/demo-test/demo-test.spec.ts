@@ -22,6 +22,9 @@ beforeEach( () => {
   // Permet de détecter les changement
   fixture.detectChanges()
 })
+
+// possibilité d'exécuter une action après chaque test
+afterEach(() => {})
   // AAA
 
   // ARRANGE : configuration pour le test
@@ -36,10 +39,10 @@ beforeEach( () => {
     // ARRANGE
     let a = 5;
     let b = 5;
+    let resultExpected = 10;
 
     // ACT
     let resultReel = a + b
-    let resultExpected = 10;
 
     // ASSERT
     expect(resultReel).toBe(resultExpected)
@@ -49,7 +52,7 @@ beforeEach( () => {
    });
 
    // vérification avec deux valeurs positive
-   it('addition should return value A + value B' , () => {
+   it('addition should return value A + value B with positive value' , () => {
 
     // ARRANGE 
     let a = 5;
