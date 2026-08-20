@@ -25,9 +25,7 @@ describe('LoginComponent', () => {
 
   // methode pour remplir un champ du formulaire
   const fillInput = (name : string , value : string) => {
-    const field = el.querySelector<HTMLInputElement>(
-      `[formControlName="${name}"]`
-    )!;
+    const field = el.querySelector<HTMLInputElement>(`[formControlName="${name}"]`)!;
     field.value = value;
     field.dispatchEvent(new Event('input'))
   }
